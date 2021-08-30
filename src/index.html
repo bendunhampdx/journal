@@ -4,6 +4,21 @@
   <title>Journal</title>
 </head>
 <body>
-<p>Small Change</p>
+  <div class="container">
+    <h1>Daily Journal</h1>
+    <form id="journal">
+    <div id="newEntry">
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Title</label>
+        <input type="text" class="form-control" id="title" placeholder="journal-title">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Entry</label>
+        <textarea class="form-control" id="text-area" rows="3"></textarea>
+      </div>
+    </div>
+    <button type="button" class="btn btn-info">New Entry</button>
+  </form>
+  </div>
 </body>
 </html>

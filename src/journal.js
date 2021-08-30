@@ -6,5 +6,5 @@ function Entry(title, body) {
 }
 
 Entry.prototype.wordCount = function() {
-  return wordCount
+  return "I can't do this yet"
 }
