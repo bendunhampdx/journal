@@ -6,6 +6,12 @@
 <body>
   <div class="container">
     <h1>Daily Journal</h1>
+    <div id="journalEntries">
+      <div>Date:<span id="date1"></span>
+        Title:<span id="title1"></span>
+      Text:<span id="entry1"></span></div>
+      <ul id="entries"></ul>
+    </div>
     <form id="journal">
     <div id="newEntry">
       <div class="mb-3">
@@ -13,8 +19,12 @@
         <input type="text" class="form-control" id="title" placeholder="journal-title">
       </div>
       <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Date</label>
+        <input type="text" class="form-control" id="date" placeholder="00-00-00">
+      </div>
+      <div class="mb-3">
         <label for="exampleFormControlTextarea1" class="form-label">Entry</label>
-        <textarea class="form-control" id="text-area" rows="3"></textarea>
+        <input class="form-control" id="text-area" rows="3"></input>
       </div>
       <button type="submit" id="submit" class="btn btn-info">Post</button>
     </form>
