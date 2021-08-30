@@ -15,20 +15,20 @@ Journal.prototype.assignId = function() {
   return this.entryId;
 };
 
-// Journal.prototype.findEntry = function(id) {
-//   if (this.entries[id] != undefined) {
-//     return this.entries[id];
-//   }
-//   return false;
-// };
+Journal.prototype.findEntry = function(id) {
+  if (this.entries[id] != undefined) {
+    return this.entries[id];
+  }
+  return false;
+};
 
 // Business logic for Entry
 
-// export function Entry(date, title, text) {
-//   this.date = date;
-//   this.title = title;
-//   this.text = text;
-// }
+export function Entry(date, title, text) {
+  this.date = date;
+  this.title = title;
+  this.text = text;
+}
 
 // Entry.prototype.getTeaser = function() {
 //   const teaser = (inputtedText.split(" ", 8)).join();
